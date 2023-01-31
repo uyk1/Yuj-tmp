@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from './mainHeader.module.css'
+import AccountBoxIcon from '@mui/icons-material/AccountBox';
 
 const mainHeader = () => {
   return (
@@ -23,7 +24,7 @@ const mainHeader = () => {
         <ul className="menu menu-horizontal px-1">
           <li>
             <Link to="/" className={styles.menu}>
-              <img alt='No Image' src='assets/YujMainLogo.svg' style={{ height: '14px' }}></img>
+              <AccountBoxIcon />
             </Link>
           </li>
           <li><Link to="/login" className={styles.menu}>로그인</Link></li>
