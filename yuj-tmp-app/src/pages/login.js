@@ -1,8 +1,11 @@
 import React from 'react'
+import LectureDetailCarousel from '../components/lectureDetailCarousel/LectureDetailCarousel';
 
 const login = () => {
   return (
-    <div>login</div>
+    <div>
+      <LectureDetailCarousel />
+    </div>
   )
 }
 
