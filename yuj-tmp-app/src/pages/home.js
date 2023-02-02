@@ -1,21 +1,19 @@
-import React from 'react'
-import LectureItemCard from '../components/lectureItemCard/LectureItemCard';
+import React from "react";
+import LectureItemCard from "../components/lectureItemCard/LectureItemCard";
+import LectureListTopBar from "../components/lectureList/LectureListTopBar";
 
 const home = () => {
   return (
-    <div className='py-7'>
+    <div className="py-7 w-full">
       <div>
-        <div className='flex flex-wrap justify-start gap-5'>
-          <LectureItemCard className='flex-none p-3'/>
-          <LectureItemCard className='flex-none' />
-          <LectureItemCard className='flex-none' />
-          <LectureItemCard className='flex-none' />
-          <LectureItemCard className='flex-none' />
-          <LectureItemCard className='flex-none' />
+        <LectureListTopBar />
+        <br />
+        <div className="flex flex-wrap justify-start gap-5">
+          <LectureItemCard className="flex-none" />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default home;
